@@ -10,9 +10,11 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.categories %} • {% for cat in page.categories %} {{ cat }} {% endfor %} {% endif %}
       </div>
       <h3>{{ page.title }}</h3>
+        <div class="addthis_sharing_toolbox"></div>
       <article class="post-content">
         <p>{{ content }}</p>
       </article>
+        <div class="addthis_sharing_toolbox"></div>
       <!-- Disqus comments -->
       {% if site.disqus %}
       <div>

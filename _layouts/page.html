@@ -10,9 +10,12 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
       </div>
       <h3>{{ page.title }}</h3>
+      <div class="addthis_sharing_toolbox"></div>
       <article class="post-content">
         <p>{{ content }}</p>
       </article>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="addthis_sharing_toolbox"></div>
       {% if site.disqus %}
       <div>
         <h3>Comments</h3>
